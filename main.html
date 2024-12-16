@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="Assets/otto-high-resolution-logo.png" alt="Logo del sitio" class="header__logo-img">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#home" class="header__menu-link">Home</a></li>
+                <li class="header__menu-item"><a href="#about" class="header__menu-link">About</a></li>
+                <li class="header__menu-item"><a href="#portfolio" class="header__menu-link">Portfolio</a></li>
+                <li class="header__menu-item"><a href="#pictures" class="header__menu-link">Gallery</a></li>
+                <li class="header__menu-item"><a href="#contact" class="header__menu-link">Contact</a></li>
+            </ul>
+        </nav>      
+    </header>
+<!--No se porque no me salen las imagenes en Slider -->
+    <main class="content">
+        <!-- Slider -->
+        <section class="slider">
+            <div class="slider__slide">
+                <img src="Assets\img\slide2.jpg" alt="Slide 1" class="slider__img">
+                <div class="slider__caption">Texto descriptivo de Otto</div>
+            </div>
+            <div class="slider__slide">
+                <img src="Assets/img/slide2.JPG" alt="Slide 2" class="slider__img">
+                <div class="slider__caption">Texto descriptivo Otto 2</div>
+            </div>
+            <button class="slider__button slider__button--prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="slider__button slider__button--next" onclick="changeSlide(1)">&#10095;</button>
+        </section>
+
+        <!-- Titles -->
+        <section class="titles">
+            <h1 class="titles__heading">Welcome to Otto's</h1>
+            <p class="titles__description">
+                This spoiled house dog loves attention and whines for everything; food, cuddles, or being let on the couch.
+            </p>
+        </section>
+
+        <!-- Pilares -->
+        <section class="pillars">
+            <article class="pillars__pillar">
+                <h2 class="pillars__heading">Otto's Evolution</h2>
+                <p class="pillars__text">Otto, now 12, has learned to play with a ball and follow simple commands.</p>
+                
+            </article>
+            <article class="pillars__pillar">
+                <h2 class="pillars__heading">Otto's Gallery</h2>
+                <p class="pillars__text">Otto's gallery has over 500 photos capturing moments of play, sleep, and more.</p>
+            </article>
+            <article class="pillars__pillar">
+                <h2 class="pillars__heading">Otto's Properties</h2>
+                <p class="pillars__text">Otto has had four beds in total and enjoys fluffing his new medium-sized blue bed.</p>
+            </article>
+            <article class="pillars__pillar">
+                <h2 class="pillars__heading">Otto's Others</h2>
+                <p class="pillars__text">Explore Otto's collection: misdeeds, sorrows, skills, and more.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Mi Otto Sitio Web. Todos los derechos reservados.</p>
+        <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="#privacy" class="footer__menu-link">Política de Privacidad</a></li>
+            <li class="footer__menu-item"><a href="#terms" class="footer__menu-link">Términos de Servicio</a></li>
+            <li class="footer__menu-item"><a href="#contact" class="footer__menu-link">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
